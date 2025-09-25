@@ -1,0 +1,36 @@
+.comprar {
+  margin-top: 100px;
+}
+
+.comprar h1 {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.comprar-conteudo video {
+  width: 900px;
+  display: block;
+  margin: 0 auto;
+  margin-top: 50px;
+  border-radius: 4px;
+  border: 1px solid #000000;
+}
+
+@media (max-width: 1000px) {
+  .comprar-conteudo video {
+    width: 600px;
+  }
+}
+
+@media (max-width: 700px) {
+  .comprar-conteudo video {
+    width: 540px;
+  }
+}
+
+@media (max-width: 600px) {
+  .comprar-conteudo video {
+    width: 440px;
+  }
+}

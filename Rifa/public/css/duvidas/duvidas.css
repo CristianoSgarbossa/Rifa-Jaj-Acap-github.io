@@ -1,0 +1,65 @@
+.duvidas {
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+.duvidas-titulo {
+  font-family: "Poppins";
+  font-size: 40px;
+  text-transform: uppercase;
+  margin-bottom: 40px;
+}
+
+.pergunta-duvida {
+  background: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0px 2px 8px rgba(0, 0, 0, 0.25);
+  margin-bottom: 15px;
+  padding: 15px;
+}
+
+.js-accordion-duvida dd {
+  display: none;
+  margin-top: 8px;
+  line-height: 1.4;
+  font-family: "Poppins";
+  color: #858181;
+  font-size: 14px;
+  list-style: none;
+  margin: 0;
+  padding: 5px 0px;
+}
+
+.js-accordion-duvida dt {
+  font-family: "Poppins";
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.js-accordion-duvida dt::after {
+  content: "⬏";
+  font-size: 16px;
+  transition: transform 0.3s ease;
+}
+
+.js-accordion-duvida dt.ativo::after {
+  content: "⬎";
+}
+
+.js-accordion-duvida dd.ativo {
+  display: block;
+  animation: slideDown 0.3s ease forwards;
+}
+
+@keyframes slideDown {
+  from {
+    max-height: 0;
+    opacity: 0;
+  }
+  to {
+    max-height: 200px;
+    opacity: 1;
+  }
+}

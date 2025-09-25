@@ -1,0 +1,86 @@
+.premios {
+  margin-top: 100px;
+}
+
+.premios h1 {
+  font-family: "Poppins";
+  text-transform: uppercase;
+  font-size: 40px;
+}
+
+.premios p {
+  font-family: "Poppins";
+  text-align: center;
+  font-weight: bold;
+}
+
+.premios-conteudo {
+  margin-top: 64px;
+  display: flex;
+  justify-content: space-around;
+  gap: 40px;
+}
+
+.premios-item {
+  flex: 1;
+  text-align: center;
+  min-width: 280px;
+}
+
+.premios-item h2 {
+  font-family: "Poppins";
+}
+
+.premios-bloco {
+  padding: 20px;
+  border-radius: 8px;
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.premios-bloco:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.35);
+}
+
+.premios-bloco img {
+  height: 300px;
+}
+
+.btn-participar {
+  display: block;
+  margin: 40px auto 0;
+  margin-top: 40px;
+  background: #a24606;
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 12px 24px;
+  border-radius: 8px;
+  font-weight: 500;
+  transition: background 0.3s ease;
+  font-family: "Poppins";
+  width: fit-content;
+}
+
+.btn-participar:hover {
+  background: #802f04;
+}
+
+/* Responsivo: empilha no celular */
+@media (max-width: 768px) {
+  .premios-conteudo {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .premios-item {
+    max-width: 400px;
+  }
+
+  .premios-bloco img {
+    height: 220px; /* reduz a altura no mobile */
+  }
+}
