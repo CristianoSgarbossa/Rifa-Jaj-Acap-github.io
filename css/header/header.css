@@ -1,6 +1,29 @@
 .header-bg {
-  background-color: #000000;
-  height: 180px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+  transition: background-color 0.3s ease, backdrop-filter 0.3s ease;
+  background-color: transparent;
+  backdrop-filter: none;
+}
+
+.header-bg.scrolled {
+  background-color: rgba(0, 0, 0, 0.1);
+  backdrop-filter: blur(20px);
+}
+
+.header-menu a {
+  color: white;
+  padding: 10px;
+  text-decoration: none;
+  transition: color 0.3s;
+}
+
+.header-menu a.ativo {
+  color: #ff8c00;
+  border-bottom: 2px solid #ff8c00;
 }
 
 .header {
@@ -13,6 +36,7 @@
 .header img {
   height: 120px;
   margin-top: 20px;
+  margin-bottom: 20px;
 }
 
 .header-menu {

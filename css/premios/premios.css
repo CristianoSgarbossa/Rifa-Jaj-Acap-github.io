@@ -1,24 +1,25 @@
 .premios {
-  margin-top: 100px;
+  margin-top: 250px;
 }
 
 .premios h1 {
   font-family: "Poppins";
   text-transform: uppercase;
   font-size: 40px;
+  color: #a24606;
 }
 
 .premios p {
   font-family: "Poppins";
   text-align: center;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .premios-conteudo {
   margin-top: 64px;
   display: flex;
-  justify-content: space-around;
-  gap: 40px;
+  justify-content: space-between;
 }
 
 .premios-item {
@@ -29,15 +30,23 @@
 
 .premios-item h2 {
   font-family: "Poppins";
+  color: #ffffff;
 }
 
 .premios-bloco {
-  padding: 20px;
+  padding: 10px;
   border-radius: 8px;
   display: flex;
   justify-content: center;
+  height: 300px;
+  width: 350px;
   box-shadow: 0 4px 4px rgba(0, 0, 0, 0.25);
   transition: transform 0.3s ease, box-shadow 0.3s ease;
+  margin-top: 30px;
+  background: rgba(255, 255, 255, 0.1); /* branco com 10% de opacidade */
+  backdrop-filter: blur(10px); /* efeito de vidro fosco */
+  -webkit-backdrop-filter: blur(10px); /* compatibilidade com Safari */
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .premios-bloco:hover {
@@ -81,6 +90,12 @@
   }
 
   .premios-bloco img {
-    height: 220px; /* reduz a altura no mobile */
+    height: 220px;
+    align-items: center;
+  }
+
+  .premios-bloco {
+    margin-bottom: 20px;
+    height: 250px;
   }
 }

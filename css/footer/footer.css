@@ -1,11 +1,14 @@
 .footer-bg {
-  background-color: #000000;
+  background: rgba(255, 255, 255, 0.1); /* branco com 10% de opacidade */
+  backdrop-filter: blur(10px); /* efeito de vidro fosco */
+  -webkit-backdrop-filter: blur(10px); /* compatibilidade com Safari */
+  transition: background 0.3s ease, transform 0.3s ease;
 }
 
 .footer {
   display: flex;
   flex-direction: column; /* organiza em coluna */
-  padding-top: 60px;
+  padding-top: 40px;
   padding-bottom: 20px;
 }
 
@@ -25,7 +28,7 @@
 .footer-copy {
   margin-top: 40px;
   text-align: center;
-  color: #333333;
+  color: #ffffff;
 }
 
 .footer h3 {
@@ -37,13 +40,8 @@
   margin-bottom: 32px;
 }
 
-.footer-contato li:nth-child(even):after {
-  content: "";
-  display: block;
-  max-width: 360px;
-  height: 2px;
-  background: #111111;
-  margin-bottom: 16px;
+.footer-contato {
+  color: #ffffff;
 }
 
 .footer li {

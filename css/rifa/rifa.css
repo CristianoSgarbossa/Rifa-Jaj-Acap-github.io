@@ -5,12 +5,15 @@
 .rifa h1 {
   font-family: "Poppins";
   font-size: 40px;
+  text-transform: uppercase;
+  color: #a24606;
 }
 
 .rifa p {
   font-family: "Poppins";
   text-align: center;
   font-weight: bold;
+  color: #ffffff;
 }
 
 .rifa-conteudo {
