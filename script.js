@@ -194,6 +194,8 @@ for (let i = 1; i <= 200; i++) {
   if (numerosComprados.includes(i)) {
     box.classList.add("comprado");
     box.textContent = "X";
+    box.style.cursor = "not-allowed";
+    box.style.pointerEvents = "none"; // impede cliques
   } else {
     // Adiciona evento de clique apenas se não estiver comprado
     box.addEventListener("click", () => {
