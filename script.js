@@ -181,7 +181,7 @@ window.addEventListener("scroll", () => {
   }
 });
 
-const numerosComprados = [66, 67]; // números que você marcou manualmente como comprados
+const numerosComprados = [66, 67, 45, 70, 16, 112, 10, 8]; // números que você marcou manualmente como comprados
 let numerosSelecionados = []; // números que o usuário escolhe
 const rifaConteudo = document.querySelector(".rifa-conteudo");
 
