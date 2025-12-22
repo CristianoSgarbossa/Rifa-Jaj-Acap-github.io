@@ -186,7 +186,7 @@ const numerosComprados = [
   26, 27, 57, 99, 93, 54, 3, 12, 13, 165, 160, 82, 115, 29, 167, 18, 23, 50,
   100, 77, 85, 15, 24, 47, 33, 6, 11, 19, 74, 20, 28, 73, 94, 107, 200, 75, 5,
   14, 22, 25, 30, 31, 32, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 46, 48, 49,
-  51, 52, 53,
+  51, 52, 53, 122, 168, 198, 154,
 ]; // números que você marcou manualmente como comprados
 let numerosSelecionados = []; // números que o usuário escolhe
 const rifaConteudo = document.querySelector(".rifa-conteudo");
